@@ -1,27 +1,47 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; 
 
-const heading = React.createElement("h1", {id: "heading", className: "headingClass"
-},"Hello World");
- const root = ReactDOM.createRoot(document.getElementById("root"));
- root.render(heading); 
+//  React.element => Object => HTMLElement
+
+// const heading = React.createElement("h1",
+//   {id: "heading"},
+//   "hello world"
+// );
+
+// JSX
+
+const Title = () => (<h1 id="heading">
+  hello world using JSX
+  </h1>);
 
 
-//  <div id="parent">
-//         <div id="child">
-//             <h1>I m h1</h1>
-//         </div>
-// </div>
+const number = 2678;
+
+const HeaderComponent = () => {
+  return (
+    <div id="container">
+      <Title /> 
+       {/* this is a component composition example */}
+       <h1>{number}</h1> 
+      <h1>Namaste Ankit</h1>
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeaderComponent/>);
+
+// console.log(heading);
+// console.log(jsxheading);
 
 
-
-const parent = React.createElement("div",{id: "parent"},
-      React.createElement("div",{id: "child"},
-        React.createElement("h1",{},"I m h1"),
-        React.createElement("h1",{},"Ankit")
-      )
-);
+ 
 
 
-//  const root = ReactDOM.createRoot(document.getElementById("hello"));
-//  root.render(parent); 
+// root.render(heading);
+// root.render(jsxheading);
+
+  
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(heading);
+
