@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "My React App",
+  
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ankit Jha",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+
+  "browserslist": [
+    "Last 2 versions"
+  ]  
+}
