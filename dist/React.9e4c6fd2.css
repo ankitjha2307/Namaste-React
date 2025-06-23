@@ -1,11 +1,13 @@
 .header {
+  background-color: #386290;
   border: 1px solid #000;
   justify-content: space-between;
   display: flex;
 }
 
 .logo {
-  width: 220px;
+  width: 100px;
+  height: 100px;
 }
 
 .Nav-items > ul {
@@ -22,10 +24,10 @@
 
 .res-cards {
   cursor: pointer;
-  background-color: #c1bbbb;
+  background-color: #94b4c1;
   border-radius: 12px;
   width: 300px;
-  margin: 10px;
+  margin: 10px 10px 25px;
   padding: 10px;
   transition: transform .2s;
   overflow: hidden;
@@ -53,6 +55,7 @@
 
 .res-container {
   flex-wrap: wrap;
+  justify-content: space-between;
   display: flex;
 }
 /*# sourceMappingURL=React.9e4c6fd2.css.map */
