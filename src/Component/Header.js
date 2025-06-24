@@ -1,9 +1,11 @@
+ import { LOGO_URL }  from "../Utils/Constant";
+
  const Header = () => {
   return (
     <div className="header">
       <div >
         <img className="logo"
-          src="https://cdn.dribbble.com/userupload/16778067/file/original-d75cb39663149843b1572e4cc64681fe.jpg?resize=400x0"
+          src={LOGO_URL}
         />
       </div>
       <div className="Nav-items">
