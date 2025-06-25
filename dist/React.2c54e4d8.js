@@ -690,18 +690,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 5
     }, undefined);
 };
@@ -709,7 +709,7 @@ _c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 22,
+    lineNumber: 23,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -18540,7 +18540,11 @@ var _resturencCards = require("./ResturencCards");
 var _resturencCardsDefault = parcelHelpers.interopDefault(_resturencCards);
 var _mockData = require("../Utils/mockData");
 var _mockDataDefault = parcelHelpers.interopDefault(_mockData);
+var _react = require("react");
+var _s = $RefreshSig$();
 const Body = ()=>{
+    _s();
+    const [listOfResutrent, setlistOfResutrent] = (0, _react.useState)((0, _mockDataDefault.default));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
@@ -18549,42 +18553,44 @@ const Body = ()=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     className: "filter-btn",
                     onClick: ()=>{
-                        console.log("Button Click");
+                        const filterdlist = listOfResutrent.filter((res)=>res.info.avgRating > 4);
+                        setlistOfResutrent(filterdlist);
                     },
                     children: "Top Rated Resturent"
                 }, void 0, false, {
                     fileName: "src/Component/Body.js",
-                    lineNumber: 9,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 8,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: (0, _mockDataDefault.default).map((restaurant, index)=>{
+                children: listOfResutrent.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturencCardsDefault.default), {
                         resData: restaurant
-                    }, index, false, {
+                    }, restaurant.info.id, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 15,
-                        columnNumber: 16
+                        lineNumber: 28,
+                        columnNumber: 17
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 11,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Component/Body.js",
-        lineNumber: 7,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };
+_s(Body, "sLAZq02S30LQnmmzFXsZn+YXCQ0=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -18595,7 +18601,7 @@ $RefreshReg$(_c, "Body");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./ResturencCards":"eIBIr","../Utils/mockData":"VQba8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"eIBIr":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./ResturencCards":"eIBIr","../Utils/mockData":"VQba8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}],"eIBIr":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$c67c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$c67c.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18608,7 +18614,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../Utils/Constant");
 const ResturentCards = (props)=>{
-    const { name, cuisines, costForTwo, areaName, cloudinaryImageId } = props.resData.info;
+    const { name, cuisines, avgRating, costForTwo, areaName, cloudinaryImageId } = props.resData.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-cards",
         children: [
@@ -18646,6 +18652,16 @@ const ResturentCards = (props)=>{
             }, void 0, false, {
                 fileName: "src/Component/ResturencCards.js",
                 lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    "Rating ",
+                    avgRating
+                ]
+            }, void 0, true, {
+                fileName: "src/Component/ResturencCards.js",
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined)
         ]
