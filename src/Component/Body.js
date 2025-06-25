@@ -16,9 +16,9 @@ const Body = () => {
             )
         })}
 
-      </div>
+      </div> 
     </div>
   );
 };
 
-export default Body;
+export default Body;    
