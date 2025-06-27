@@ -1,5 +1,5 @@
 import ResturentCards from "./ResturencCards"; 
-//    
+import Shimmer from "./shimmer"; 
 
 import { useEffect, useState } from "react";
 
@@ -19,19 +19,24 @@ const fetchData = async () => {
 
 const json= await data.json();
 
-setlistOfResutrent(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
+setlistOfResutrent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants )
 console.log(json);
-
+ 
 };
 
-  return (
+if(listOfResutrent.length === 0){
+  return <Shimmer/>; 
+}
+
+  return listOfResutrent.length === 0 ?<Shimmer/>:
+   (
     <div className="body">
       <div className="filter">
         <button 
         className="filter-btn"
          onClick={() => {
           const filterdlist = listOfResutrent.filter(
-            (res)=> res.info.avgRating >4
+            (res)=> res.info.avgRating >4.3
           );
           setlistOfResutrent(filterdlist);
            

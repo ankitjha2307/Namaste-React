@@ -60,7 +60,37 @@
 }
 
 .filter-btn {
+  color: #333;
   cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
   margin: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all .2s ease-in-out;
+  box-shadow: 0 1px 2px #0000000d;
+}
+
+.filter-btn:hover {
+  background-color: #f0f0f0;
+  border-color: #d0d0d0;
+}
+
+.shimmer-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+
+.shimmer-card {
+  background: #b8bec5;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 /*# sourceMappingURL=React.9e4c6fd2.css.map */
