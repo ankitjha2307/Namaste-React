@@ -3,6 +3,6 @@ export const CDN_URL =
 
 
 export const LOGO_URL = 
-"https://cdn.dribbble.com/userupload/16778067/file/original-d75cb39663149843b1572e4cc64681fe.jpg?resize=400x0"
+"https://static.vecteezy.com/system/resources/previews/011/405/724/non_2x/call-food-logo-design-food-delivery-service-logo-concept-free-vector.jpg"
          
 

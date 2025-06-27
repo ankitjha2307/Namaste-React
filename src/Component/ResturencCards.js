@@ -9,10 +9,12 @@ const ResturentCards = (props) => {
 
       <img className="img" src={CDN_URL+ cloudinaryImageId}/>
       <h3>{name}</h3>
-      <h4>{cuisines}</h4>
+      <div className="name">
+        <h4>{cuisines}</h4>
       <h4>{costForTwo}</h4>
       <h4>{areaName}</h4>
       <h4>Rating {avgRating}</h4>
+      </div>
     </div>
   )
 };
