@@ -2,17 +2,26 @@
   margin: 0;
 }
 
+.body {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .header {
   background-color: #fff;
-  border: 1px solid #98acb8;
+  border: 1px solid #0000;
   justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
 }
 
 .logo {
   object-fit: cover;
   width: 100px;
-  height: 100px;
+  height: 50px;
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 .Nav-items > ul {
@@ -27,12 +36,50 @@
   padding: 10px;
 }
 
+.title {
+  justify-content: space-between;
+  display: flex;
+}
+
+.crousel-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.crousel-item, .crousel-image {
+  width: 150px;
+  height: 180px;
+}
+
+.crousel {
+  display: flex;
+}
+
+.horizontal-sidebar {
+  white-space: nowrap;
+  background-color: #f3f4f6;
+  width: 100%;
+  padding: .5rem;
+  overflow-x: auto;
+  box-shadow: 0 1px 3px #0000001a;
+}
+
+.sidebar-button {
+  background-color: #fff;
+  border: 0 solid #e5e7eb;
+  padding: .5rem 1rem;
+}
+
+.sidebar-button:hover {
+  background-color: #e5e7eb;
+}
+
 .res-cards {
+  width: 250px;
+  height: 300pxpx;
   cursor: pointer;
   background-color: #8ba6e6;
   border-radius: 12px;
-  width: 300px;
-  height: 300px;
   margin: 10px 10px 25px;
   padding: 10px;
   transition: transform .2s;
@@ -103,11 +150,12 @@
 .login {
   color: #fff;
   cursor: pointer;
+  text-align: center;
   background-color: #5676c0;
   border: none;
   border-radius: 8px;
-  width: 110px;
-  height: 90px;
+  width: 100px;
+  height: 50px;
   margin: 10px;
   padding: 25px;
   font-size: 16px;

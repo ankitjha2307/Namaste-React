@@ -1,12 +1,17 @@
 import ResturentCards from "./ResturencCards"; 
-import Shimmer from "./shimmer"; 
+import Shimmer from "./shimmer";
+import HorizontalSideBar from "./HorizontalSideBar"; 
 
-import { useEffect, useState } from "react";
+import { useEffect,useState } from "react";
 
 
 
 const Body = () => {
 const [listOfResutrent,setlistOfResutrent] = useState([]);
+const[crouselArray,setCrouselArray] = useState([]);
+
+
+
 
 
 useEffect(()=> {
@@ -21,16 +26,33 @@ const json= await data.json();
 
 setlistOfResutrent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants )
 console.log(json);
- 
+
+setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
 };
 
-if(listOfResutrent.length === 0){
-  return <Shimmer/>; 
-}
+
+// if(listOfResutrent.length === 0){
+//   return <Shimmer/>; 
+// }
 
   return listOfResutrent.length === 0 ?<Shimmer/>:
    (
     <div className="body">
+      <div className="crousel-container">
+       <div className="title">
+           <h1>Whats on your mind ?</h1>
+
+         <div className="pointer">
+           
+       
+          </div>
+       </div>
+       
+       <div className="crousel">
+         <HorizontalSideBar data={crouselArray}/>       
+      </div>
+      
+      </div>
       <div className="filter">
         <button 
         className="filter-btn"
