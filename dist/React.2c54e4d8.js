@@ -160,11 +160,11 @@
       });
     }
   }
-})({"JXIF8":[function(require,module,exports,__globalThis) {
+})({"frqA7":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 54665;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -18564,6 +18564,7 @@ const Body = ()=>{
     _s();
     const [listOfResutrent, setlistOfResutrent] = (0, _react.useState)([]);
     const [crouselArray, setCrouselArray] = (0, _react.useState)([]);
+    const [serchText, setSerchText] = (0, _react.useState)("");
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
@@ -18579,7 +18580,7 @@ const Body = ()=>{
     // }
     return listOfResutrent.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/Component/Body.js",
-        lineNumber: 38,
+        lineNumber: 33,
         columnNumber: 40
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -18594,20 +18595,20 @@ const Body = ()=>{
                                 children: "Whats on your mind ?"
                             }, void 0, false, {
                                 fileName: "src/Component/Body.js",
-                                lineNumber: 43,
+                                lineNumber: 38,
                                 columnNumber: 12
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "pointer"
                             }, void 0, false, {
                                 fileName: "src/Component/Body.js",
-                                lineNumber: 45,
+                                lineNumber: 40,
                                 columnNumber: 10
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 42,
+                        lineNumber: 37,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18616,37 +18617,71 @@ const Body = ()=>{
                             data: crouselArray
                         }, void 0, false, {
                             fileName: "src/Component/Body.js",
-                            lineNumber: 52,
+                            lineNumber: 47,
                             columnNumber: 10
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 51,
+                        lineNumber: 46,
                         columnNumber: 8
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 41,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "filter",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "filter-btn",
-                    onClick: ()=>{
-                        const filterdlist = listOfResutrent.filter((res)=>res.info.avgRating > 4.3);
-                        setlistOfResutrent(filterdlist);
-                    },
-                    children: "Top Rated Resturent"
-                }, void 0, false, {
-                    fileName: "src/Component/Body.js",
-                    lineNumber: 57,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "search",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                className: "search-bar",
+                                value: serchText,
+                                onChange: (e)=>{
+                                    setSerchText(e.target.value);
+                                }
+                            }, void 0, false, {
+                                fileName: "src/Component/Body.js",
+                                lineNumber: 53,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: ()=>{
+                                    //filter the resturent card and update the ui 
+                                    console.log(serchText);
+                                },
+                                children: "Search"
+                            }, void 0, false, {
+                                fileName: "src/Component/Body.js",
+                                lineNumber: 56,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Component/Body.js",
+                        lineNumber: 52,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "filter-btn",
+                        onClick: ()=>{
+                            const filterdlist = listOfResutrent.filter((res)=>res.info.avgRating > 4.3);
+                            setlistOfResutrent(filterdlist);
+                        },
+                        children: "Top Rated Resturent"
+                    }, void 0, false, {
+                        fileName: "src/Component/Body.js",
+                        lineNumber: 62,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 56,
+                lineNumber: 51,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18656,23 +18691,23 @@ const Body = ()=>{
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 73,
+                        lineNumber: 78,
                         columnNumber: 17
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 70,
+                lineNumber: 75,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Component/Body.js",
-        lineNumber: 40,
+        lineNumber: 35,
         columnNumber: 5
     }, undefined);
 };
-_s(Body, "zfCmQMkYRezA6lPW9m8wkLGPN+s=");
+_s(Body, "4YMC57/OtgAD5RNo+332bW+5FFg=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -18978,6 +19013,6 @@ $RefreshReg$(_c, "HorizontalSideBar");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["JXIF8","hh6uc"], "hh6uc", "parcelRequire77dd", {}, null, null, "http://localhost:54665")
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["frqA7","hh6uc"], "hh6uc", "parcelRequire77dd", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=React.2c54e4d8.js.map

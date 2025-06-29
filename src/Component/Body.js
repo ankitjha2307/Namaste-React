@@ -1,18 +1,13 @@
 import ResturentCards from "./ResturencCards"; 
 import Shimmer from "./shimmer";
 import HorizontalSideBar from "./HorizontalSideBar"; 
-
 import { useEffect,useState } from "react";
-
-
 
 const Body = () => {
 const [listOfResutrent,setlistOfResutrent] = useState([]);
 const[crouselArray,setCrouselArray] = useState([]);
 
-
-
-
+const [serchText,setSerchText] = useState("");
 
 useEffect(()=> {
   fetchData();
@@ -54,6 +49,16 @@ setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.i
       
       </div>
       <div className="filter">
+        <div className="search">
+          <input type="text" className="search-bar" value={serchText} onChange={(e)=> {
+            setSerchText(e.target.value); 
+          }}/>
+          <button onClick={() => {
+            //filter the resturent card and update the ui 
+            console.log(serchText) ; 
+          }}>Search</button>
+
+        </div>
         <button 
         className="filter-btn"
          onClick={() => {

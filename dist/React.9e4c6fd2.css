@@ -112,6 +112,22 @@
   display: flex;
 }
 
+.filter {
+  display: flex;
+}
+
+.search {
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all .2s ease-in-out;
+  box-shadow: 0 1px 2px #0000000d;
+}
+
 .filter-btn {
   color: #333;
   cursor: pointer;
