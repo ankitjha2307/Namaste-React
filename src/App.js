@@ -4,6 +4,8 @@ import Header from "./Component/Header";
 import Body from "./Component/Body";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./Component/About";
+import ContactUs from "./Component/ContactUs";
+import Error from "./Component/Error";
 
 
 
@@ -22,11 +24,17 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout/>,
+    errorElement: <Error/>
   },
  
   {
     path: "/about", 
     element:  < About/>
+  },
+
+  {
+    path: "/contact", 
+    element:  < ContactUs/>
   }
 ])
 
