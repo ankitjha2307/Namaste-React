@@ -357,4 +357,63 @@
   margin-bottom: 2rem;
   font-size: 1rem;
 }
+
+.footer {
+  color: #130c0c;
+  background-color: #a9b0c3;
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+}
+
+.footer-container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.footer-section h3, .footer-section h4 {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+.footer-section p, .footer-section ul {
+  font-size: .9rem;
+}
+
+.footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: .5rem;
+}
+
+.footer-section ul li a {
+  color: #170303;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  gap: .75rem;
+  display: flex;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #1353b4;
+  margin-top: 2rem;
+  font-size: .75rem;
+}
 /*# sourceMappingURL=React.9e4c6fd2.css.map */
