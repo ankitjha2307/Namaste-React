@@ -57,16 +57,13 @@ setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.i
             setSerchText(e.target.value); 
           }}/>
           <button className="search-button" onClick={() => {
-            //filter the resturent card and update the ui 
-            console.log(serchText) ; 
-
-           const filterResturent =listOfResutrent.filter((res)=>res.info.name.includes(serchText));
-
-           setlistOfResutrent(filterResturent);
-
-
-
-          }}>Search</button>
+  const filtered = listOfResutrent.filter((res) =>
+    res.info.name.toLowerCase().includes(serchText.toLowerCase())
+  );
+  setFilterResturent(filtered);
+}}>
+  Search
+</button>
 
         </div>
         <button 

@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client"; 
 import Header from "./Component/Header";
 import Body from "./Component/Body";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./Component/About";
 
 
 
@@ -16,11 +18,22 @@ const AppLayout = () => {
   )
 }
 
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout/>,
+  },
+ 
+  {
+    path: "/about", 
+    element:  < About/>
+  }
+])
 
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router= {appRouter}/>);
 
 
 
