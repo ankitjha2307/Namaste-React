@@ -16145,12 +16145,12 @@ const Header = ()=>{
                     src: (0, _constant.LOGO_URL)
                 }, void 0, false, {
                     fileName: "src/Component/Header.js",
-                    lineNumber: 11,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Component/Header.js",
-                lineNumber: 10,
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16161,28 +16161,28 @@ const Header = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/Component/Header.js",
-                            lineNumber: 17,
+                            lineNumber: 20,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About"
                         }, void 0, false, {
                             fileName: "src/Component/Header.js",
-                            lineNumber: 18,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/Component/Header.js",
-                            lineNumber: 19,
+                            lineNumber: 22,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "src/Component/Header.js",
-                            lineNumber: 20,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -16193,24 +16193,24 @@ const Header = ()=>{
                             children: btnNameReact
                         }, void 0, false, {
                             fileName: "src/Component/Header.js",
-                            lineNumber: 21,
+                            lineNumber: 24,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Component/Header.js",
-                    lineNumber: 16,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Component/Header.js",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Component/Header.js",
-        lineNumber: 9,
+        lineNumber: 11,
         columnNumber: 5
     }, undefined);
 };
@@ -18560,9 +18560,11 @@ var _horizontalSideBar = require("./HorizontalSideBar");
 var _horizontalSideBarDefault = parcelHelpers.interopDefault(_horizontalSideBar);
 var _react = require("react");
 var _s = $RefreshSig$();
+// import { CiSearch } from "react-icons/ci";
 const Body = ()=>{
     _s();
     const [listOfResutrent, setlistOfResutrent] = (0, _react.useState)([]);
+    const [filterResturent, setFilterResturent] = (0, _react.useState)([]);
     const [crouselArray, setCrouselArray] = (0, _react.useState)([]);
     const [serchText, setSerchText] = (0, _react.useState)("");
     (0, _react.useEffect)(()=>{
@@ -18573,6 +18575,7 @@ const Body = ()=>{
         const json = await data.json();
         setlistOfResutrent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         console.log(json);
+        setFilterResturent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
     };
     // if(listOfResutrent.length === 0){
@@ -18580,7 +18583,7 @@ const Body = ()=>{
     // }
     return listOfResutrent.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/Component/Body.js",
-        lineNumber: 33,
+        lineNumber: 36,
         columnNumber: 40
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -18595,20 +18598,20 @@ const Body = ()=>{
                                 children: "Whats on your mind ?"
                             }, void 0, false, {
                                 fileName: "src/Component/Body.js",
-                                lineNumber: 38,
+                                lineNumber: 41,
                                 columnNumber: 12
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "pointer"
                             }, void 0, false, {
                                 fileName: "src/Component/Body.js",
-                                lineNumber: 40,
+                                lineNumber: 43,
                                 columnNumber: 10
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 37,
+                        lineNumber: 40,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18617,97 +18620,100 @@ const Body = ()=>{
                             data: crouselArray
                         }, void 0, false, {
                             fileName: "src/Component/Body.js",
-                            lineNumber: 47,
+                            lineNumber: 50,
                             columnNumber: 10
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 46,
+                        lineNumber: 49,
                         columnNumber: 8
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 36,
+                lineNumber: 39,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "filter",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "search",
+                        className: "search-bar",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "text",
-                                className: "search-bar",
+                                className: "search",
                                 value: serchText,
                                 onChange: (e)=>{
                                     setSerchText(e.target.value);
                                 }
                             }, void 0, false, {
                                 fileName: "src/Component/Body.js",
-                                lineNumber: 53,
+                                lineNumber: 56,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "search-button",
                                 onClick: ()=>{
                                     //filter the resturent card and update the ui 
                                     console.log(serchText);
+                                    const filterResturent = listOfResutrent.filter((res)=>res.info.name.includes(serchText));
+                                    setlistOfResutrent(filterResturent);
                                 },
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "src/Component/Body.js",
-                                lineNumber: 56,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 52,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "filter-btn",
                         onClick: ()=>{
                             const filterdlist = listOfResutrent.filter((res)=>res.info.avgRating > 4.3);
-                            setlistOfResutrent(filterdlist);
+                            setFilterResturent(filterdlist);
                         },
                         children: "Top Rated Resturent"
                     }, void 0, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 62,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 51,
+                lineNumber: 54,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: listOfResutrent.map((restaurant)=>{
+                children: filterResturent.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturencCardsDefault.default), {
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 78,
+                        lineNumber: 88,
                         columnNumber: 17
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 75,
+                lineNumber: 85,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Component/Body.js",
-        lineNumber: 35,
+        lineNumber: 38,
         columnNumber: 5
     }, undefined);
 };
-_s(Body, "4YMC57/OtgAD5RNo+332bW+5FFg=");
+_s(Body, "xfD8U2SW8dY1sbj3JarI0jvQFdM=");
 _c = Body;
 exports.default = Body;
 var _c;

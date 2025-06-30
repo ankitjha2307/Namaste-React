@@ -2,9 +2,11 @@ import ResturentCards from "./ResturencCards";
 import Shimmer from "./shimmer";
 import HorizontalSideBar from "./HorizontalSideBar"; 
 import { useEffect,useState } from "react";
+// import { CiSearch } from "react-icons/ci";
 
 const Body = () => {
-const [listOfResutrent,setlistOfResutrent] = useState([]);
+const [listOfResutrent,setlistOfResutrent] = useState([]);  
+const [filterResturent,setFilterResturent] = useState([])
 const[crouselArray,setCrouselArray] = useState([]);
 
 const [serchText,setSerchText] = useState("");
@@ -21,8 +23,9 @@ const json= await data.json();
 
 setlistOfResutrent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants )
 console.log(json);
-
+setFilterResturent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
+
 };
 
 
@@ -49,13 +52,20 @@ setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.i
       
       </div>
       <div className="filter">
-        <div className="search">
-          <input type="text" className="search-bar" value={serchText} onChange={(e)=> {
+        <div className="search-bar">
+          <input type="text" className="search" value={serchText} onChange={(e)=> {
             setSerchText(e.target.value); 
           }}/>
-          <button onClick={() => {
+          <button className="search-button" onClick={() => {
             //filter the resturent card and update the ui 
             console.log(serchText) ; 
+
+           const filterResturent =listOfResutrent.filter((res)=>res.info.name.includes(serchText));
+
+           setlistOfResutrent(filterResturent);
+
+
+
           }}>Search</button>
 
         </div>
@@ -65,7 +75,7 @@ setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.i
           const filterdlist = listOfResutrent.filter(
             (res)=> res.info.avgRating >4.3
           );
-          setlistOfResutrent(filterdlist);
+          setFilterResturent(filterdlist);
            
            }}
            >
@@ -74,7 +84,7 @@ setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.i
       </div>
       <div className="res-container">
         
-        {listOfResutrent.map((restaurant)=>{   
+        {filterResturent.map((restaurant)=>{   
         return  <ResturentCards key={restaurant.info.id} resData={restaurant}/>
             
         })}
