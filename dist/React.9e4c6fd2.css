@@ -416,4 +416,26 @@
   margin-top: 2rem;
   font-size: .75rem;
 }
+
+.menu-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.menu-category {
+  border: 1px solid #000;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+  padding-left: 20px;
+  display: flex;
+}
+
+.resLink, .homeLink, .aboutLink, .contactLink {
+  color: inherit;
+  text-decoration: none;
+}
 /*# sourceMappingURL=React.9e4c6fd2.css.map */

@@ -18,7 +18,8 @@ const AppLayout = () => {
     <div className="app">
         <Header />
         <Outlet/>
-        <Footer/>
+        < Footer/>
+        
       
     </div>
   )
@@ -32,8 +33,10 @@ const appRouter = createBrowserRouter([
 
        {
     path: "/", 
-    element:  < Body/>
+    element:  < Body/>,
   },
+
+  
 
       {
     path: "/about",  

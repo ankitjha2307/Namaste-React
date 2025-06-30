@@ -449,7 +449,41 @@
   margin-top: 2rem;
 }
 
+.menu-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.menu-category{
+  height: 50px;
+  width: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 20px;
+}
 
+.resLink{
+  text-decoration: none;
+  color: inherit;
+}
+
+.homeLink{
+  text-decoration: none;
+  color: inherit;
+}
+
+.aboutLink{
+  text-decoration: none;
+  color: inherit;
+}
+
+.contactLink{
+  text-decoration: none;
+  color: inherit;
+}
 
 

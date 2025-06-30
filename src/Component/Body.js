@@ -2,7 +2,7 @@ import ResturentCards from "./ResturencCards";
 import Shimmer from "./shimmer";
 import HorizontalSideBar from "./HorizontalSideBar"; 
 import { useEffect,useState } from "react";
-// import { CiSearch } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Body = () => {
 const [listOfResutrent,setlistOfResutrent] = useState([]);  
@@ -82,7 +82,7 @@ setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.i
       <div className="res-container">
         
         {filterResturent.map((restaurant)=>{   
-        return  <ResturentCards key={restaurant.info.id} resData={restaurant}/>
+        return <Link className="resLink" key={restaurant.info.id} to={"/resturant/" +restaurant.info.id}> <ResturentCards  resData={restaurant}/></Link>
             
         })}
 
