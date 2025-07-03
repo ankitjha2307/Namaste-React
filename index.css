@@ -230,6 +230,11 @@
   text-align: center;
   transition: background-color 0.3s ease;
   margin: 10px;  
+   text-decoration: none;
+  color: inherit;
+  
+
+
 }
 
 .about-container {
@@ -387,7 +392,89 @@
   margin-bottom: 2rem;
 }
 
-/* Footer.css */
+
+.login-container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9acfd9;
+}
+
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 24rem;
+}
+
+.login-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1b8bc7;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.login-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.login-input {
+  margin-top: 0.25rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  outline: none;
+}
+
+
+
+
+.login-button {
+  width: 100%;
+  background-color: #1b8bc7;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover {
+  background-color: #0f4fe4;
+}
+
+.login-footer {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.signup-link {
+  color: #310cea;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+
+
 .footer {
   background-color: #a9b0c3;
   color: rgb(19, 12, 12);
@@ -450,6 +537,7 @@
 }
 
 .menu-container{
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -460,10 +548,26 @@
   height: 50px;
   width: 50%;
   border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
   display: flex;
   justify-content: left;
   align-items: center;
   padding-left: 20px;
+  cursor: pointer;
+  
+}
+
+.menu-category:hover{
+  background-color: rgb(169, 199, 231);
+}
+
+
+
+.menu{
+  margin: 20px;
+  padding-left: 20px;
+  align-items: center;
 }
 
 .resLink{

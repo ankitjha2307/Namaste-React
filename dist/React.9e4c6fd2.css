@@ -189,7 +189,7 @@
 }
 
 .login {
-  color: #fff;
+  color: inherit;
   cursor: pointer;
   text-align: center;
   background-color: #5676c0;
@@ -201,6 +201,7 @@
   padding: 25px;
   font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
   transition: background-color .3s;
 }
 
@@ -358,6 +359,83 @@
   font-size: 1rem;
 }
 
+.login-container {
+  background-color: #9acfd9;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  display: flex;
+}
+
+.login-box {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 24rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px #0000001a;
+}
+
+.login-title {
+  color: #1b8bc7;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.login-form {
+  gap: 1.25rem;
+  display: grid;
+}
+
+.login-label {
+  color: #374151;
+  font-size: .875rem;
+  font-weight: 500;
+  display: block;
+}
+
+.login-input {
+  border: 1px solid #d1d5db;
+  border-radius: .75rem;
+  outline: none;
+  width: 100%;
+  margin-top: .25rem;
+  padding: .5rem 1rem;
+}
+
+.login-button {
+  color: #fff;
+  background-color: #1b8bc7;
+  border-radius: .75rem;
+  width: 100%;
+  padding: .5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: background-color .2s;
+}
+
+.login-button:hover {
+  background-color: #0f4fe4;
+}
+
+.login-footer {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 1rem;
+  font-size: .875rem;
+}
+
+.signup-link {
+  color: #310cea;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
 .footer {
   color: #130c0c;
   background-color: #a9b0c3;
@@ -421,17 +499,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
   display: flex;
 }
 
 .menu-category {
+  cursor: pointer;
   border: 1px solid #000;
+  border-radius: 10px;
   justify-content: left;
   align-items: center;
   width: 50%;
   height: 50px;
+  margin: 10px;
   padding-left: 20px;
   display: flex;
+}
+
+.menu-category:hover {
+  background-color: #a9c7e7;
+}
+
+.menu {
+  align-items: center;
+  margin: 20px;
+  padding-left: 20px;
 }
 
 .resLink, .homeLink, .aboutLink, .contactLink {

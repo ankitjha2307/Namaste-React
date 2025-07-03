@@ -24,13 +24,8 @@ import { Link } from "react-router-dom";
           <li> <Link className="aboutLink" to= "/about">About</Link></li>
           <li><Link className="contactLink" to="/contact">Contact</Link></li>
           <li>Cart</li>
-          <button className="login" 
-          onClick={() => {
-           btnNameReact === 'Login' ? setbtnNameReact("Logout") : setbtnNameReact("Login");
-          }}
-          > 
-          {btnNameReact}
-          </button>
+          <li  > <Link className="login" to ="/login" > Login </Link> </li>
+
         </ul>
       </div>
     </div>

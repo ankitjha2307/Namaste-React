@@ -8,6 +8,7 @@ import ContactUs from "./Component/ContactUs";
 import Error from "./Component/Error";
 import ResturantMenu from "./Component/ResturantMenu";
 import Footer from "./Component/Footer";
+import LoginPage from "./Component/Login";
 
 
 
@@ -50,6 +51,11 @@ const appRouter = createBrowserRouter([
   {
     path: "/resturant/:resId", 
     element: <ResturantMenu/>
+    
+  },
+   {
+    path: "/login", 
+    element: <LoginPage/>
     
   }
 
