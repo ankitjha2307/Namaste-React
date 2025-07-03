@@ -1,9 +1,10 @@
-import ResturentCards from "./ResturencCards"; 
+import ResturentCards, {withPromotedLabel} from "./ResturencCards"; 
 import Shimmer from "./shimmer";
 import HorizontalSideBar from "./HorizontalSideBar"; 
 import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../Utils/useOnlineStatus";
+
 
 const Body = () => {
 const [listOfResutrent,setlistOfResutrent] = useState([]);  
@@ -11,6 +12,8 @@ const [filterResturent,setFilterResturent] = useState([])
 const[crouselArray,setCrouselArray] = useState([]);
 
 const [serchText,setSerchText] = useState("");
+
+const ResturencCardsPromoted = withPromotedLabel(ResturentCards);
 
 useEffect(()=> {
   fetchData();
@@ -93,7 +96,13 @@ if (onlineStatus === false )
       <div className="res-container">
         
         {filterResturent.map((restaurant)=>{   
-        return <Link className="resLink" key={restaurant.info.id} to={"/resturant/" +restaurant.info.id}> <ResturentCards  resData={restaurant}/></Link>
+        return <Link className="resLink" key={restaurant.info.id} to={"/resturant/" +restaurant.info.id}>
+          
+         {
+            restaurant.info.avgRating >4.3 ? (<ResturencCardsPromoted  resData={restaurant}/> ): ( <ResturentCards  resData={restaurant}/>
+        )}
+
+           </Link>
             
         })}
 

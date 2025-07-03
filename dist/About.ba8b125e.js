@@ -160,7 +160,7 @@
       });
     }
   }
-})({"9XU6m":[function(require,module,exports,__globalThis) {
+})({"iYKQn":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -168,7 +168,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "05556a36c94a2a2e";
+module.bundle.HMR_BUNDLE_ID = "5176e224ba8b125e";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -666,150 +666,176 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"dup3p":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$172e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$172e.init();
+},{}],"b5tT6":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$48a4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$48a4.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
 var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$172e.prelude(module);
+$parcel$ReactRefreshHelpers$48a4.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const ContactUs = ()=>{
+const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "contact-container",
+        className: "about-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "contact-header",
+                className: "about-header",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Contact Us"
+                        children: "About Us"
                     }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
-                        lineNumber: 7,
+                        fileName: "src/Component/About.jsx",
+                        lineNumber: 5,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "We\u2019d love to hear from you! Get in touch for any queries or support."
+                        children: "Delicious food delivered to your doorstep, fast and fresh."
                     }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
-                        lineNumber: 8,
+                        fileName: "src/Component/About.jsx",
+                        lineNumber: 6,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/Component/ContactUs.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                className: "contact-form",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        placeholder: "Your Name",
-                        required: true
-                    }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
-                        lineNumber: 12,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "email",
-                        placeholder: "Email Address",
-                        required: true
-                    }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
-                        lineNumber: 13,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                        placeholder: "Your Message",
-                        required: true
-                    }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
-                        lineNumber: 14,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        type: "submit",
-                        children: "Send Message"
-                    }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Component/ContactUs.js",
-                lineNumber: 11,
+                fileName: "src/Component/About.jsx",
+                lineNumber: 4,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "contact-info",
+                className: "about-text",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "Welcome to EatGood! We\u2019re passionate about bringing your favorite meals from top-rated restaurants straight to your door. Our mission is to simplify the way you experience food delivery\u2014quick, reliable, and satisfying."
+                }, void 0, false, {
+                    fileName: "src/Component/About.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Component/About.jsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "about-highlights",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "Our Office"
-                    }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "highlight-card",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Fast Delivery"
+                            }, void 0, false, {
+                                fileName: "src/Component/About.jsx",
+                                lineNumber: 20,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Our delivery partners ensure your food reaches you piping hot and on time."
+                            }, void 0, false, {
+                                fileName: "src/Component/About.jsx",
+                                lineNumber: 21,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Component/About.jsx",
                         lineNumber: 19,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "EatGood HQ"
-                    }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "B391/2 Bhagya Vihar, Delhi NCR, India"
-                    }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Email: ankitjha0723@gmail.com"
-                    }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
-                        lineNumber: 22,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Phone: +91 99999990"
-                    }, void 0, false, {
-                        fileName: "src/Component/ContactUs.js",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "highlight-card",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Top Restaurants"
+                            }, void 0, false, {
+                                fileName: "src/Component/About.jsx",
+                                lineNumber: 24,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "We partner with the best local and international food joints."
+                            }, void 0, false, {
+                                fileName: "src/Component/About.jsx",
+                                lineNumber: 25,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Component/About.jsx",
                         lineNumber: 23,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "highlight-card",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Secure Payments"
+                            }, void 0, false, {
+                                fileName: "src/Component/About.jsx",
+                                lineNumber: 28,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Multiple payment options with best-in-class encryption."
+                            }, void 0, false, {
+                                fileName: "src/Component/About.jsx",
+                                lineNumber: 29,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Component/About.jsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "highlight-card",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Customer Support"
+                            }, void 0, false, {
+                                fileName: "src/Component/About.jsx",
+                                lineNumber: 32,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "24/7 live support to help you with orders, refunds, or questions."
+                            }, void 0, false, {
+                                fileName: "src/Component/About.jsx",
+                                lineNumber: 33,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Component/About.jsx",
+                        lineNumber: 31,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/Component/ContactUs.js",
+                fileName: "src/Component/About.jsx",
                 lineNumber: 18,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/Component/ContactUs.js",
-        lineNumber: 5,
-        columnNumber: 5
+        fileName: "src/Component/About.jsx",
+        lineNumber: 3,
+        columnNumber: 10
     }, undefined);
 };
-_c = ContactUs;
-exports.default = ContactUs;
+_c = About;
+exports.default = About;
 var _c;
-$RefreshReg$(_c, "ContactUs");
+$RefreshReg$(_c, "About");
 
-  $parcel$ReactRefreshHelpers$172e.postlude(module);
+  $parcel$ReactRefreshHelpers$48a4.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["9XU6m"], null, "parcelRequire77dd", {})
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["iYKQn"], null, "parcelRequire77dd", {})
 
-//# sourceMappingURL=ContactUs.c94a2a2e.js.map
+//# sourceMappingURL=About.ba8b125e.js.map

@@ -28,7 +28,7 @@ import useOnlineStatus from "../Utils/useOnlineStatus";
           <li>
            <Link className="homeLink" to="/">  Home </Link> 
           </li>
-          <li> <Link className="aboutLink" to= "/about">About</Link></li>
+          <li><Link className="aboutLink" to= "/about">About</Link></li>
           <li><Link className="contactLink" to="/contact">Contact</Link></li>
           <li>Cart</li>
           <li  > <Link className="login" to ="/login" > Login </Link> </li>

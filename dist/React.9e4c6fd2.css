@@ -113,13 +113,18 @@
 }
 
 .filter {
-  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-bar {
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   max-width: 800px;
   margin: 20px;
+  padding-bottom: 0;
+  padding-left: 230px;
   display: flex;
 }
 
@@ -160,7 +165,7 @@
   border: 1px solid #e2e2e2;
   border-radius: 20px;
   margin: 10px;
-  padding: 8px 16px;
+  padding: 0 16px 8px;
   font-size: 14px;
   font-weight: 500;
   transition: all .2s ease-in-out;
@@ -529,5 +534,23 @@
 .resLink, .homeLink, .aboutLink, .contactLink {
   color: inherit;
   text-decoration: none;
+}
+
+.res-card-wrapper {
+  position: relative;
+}
+
+.promoted-label {
+  color: #fff;
+  z-index: 10;
+  background-color: red;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 0 2px 6px #0003;
 }
 /*# sourceMappingURL=React.9e4c6fd2.css.map */

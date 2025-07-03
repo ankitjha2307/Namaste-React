@@ -127,7 +127,9 @@
 
 
 .filter{
-  display: flex;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -145,6 +147,10 @@
   margin: 20px;
   max-width: 800px;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 230px;
+  padding-bottom: 0px;
 }
 
 .search {
@@ -157,6 +163,7 @@
   outline: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: border 0.3s ease;
+  
 }
 
 .search:focus {
@@ -191,6 +198,7 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding-top: 0px ;
     
 }
 
@@ -589,5 +597,24 @@
   text-decoration: none;
   color: inherit;
 }
+
+.res-card-wrapper {
+  position: relative;
+}
+
+.promoted-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 
 

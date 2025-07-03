@@ -16,8 +16,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^6.30.1",
-    "react-router-dom": "^6.30.1",
-    "reactdom": "^2.0.0"
+    "react-router-dom": "^6.30.1"
   },
   "browserslist": [
     "Last 2 versions"
