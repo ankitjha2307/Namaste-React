@@ -3,6 +3,7 @@ import Shimmer from "./shimmer";
 import HorizontalSideBar from "./HorizontalSideBar"; 
 import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../Utils/useOnlineStatus";
 
 const Body = () => {
 const [listOfResutrent,setlistOfResutrent] = useState([]);  
@@ -28,6 +29,16 @@ setCrouselArray(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.i
 
 };
 
+
+const onlineStatus = useOnlineStatus();
+
+
+if (onlineStatus === false ) 
+  return ( 
+       <h1>
+          You are ofline, Please check your internet connection
+        </h1>
+  );
 
 // if(listOfResutrent.length === 0){
 //   return <Shimmer/>; 
