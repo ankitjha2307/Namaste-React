@@ -29,25 +29,21 @@ const ResturantMenu = () => {
       </div>
       <div className="menu-container">
 
-          {cardsArray.map((card, index)=>{ 
-            const {title} = card.card.card; 
-            const itemCards = card.card.card.itemCards;
-            if(!itemCards) return null;
-           
-            return (
-              <div className="menu-category" key={index}>
-                <div className="title">{title}</div>
-                <div className="arrow">⬇️</div>
-              </div>
-            )
+          {cardsArray.map((card, index) => { 
+  const { title } = card.card.card; 
+  const itemCards = card.card.card.itemCards;
+  if (!itemCards) return null;
 
-            })} 
+  return (
+    <div className="menu-category" key={index}>
+      <div className="title">{title} ({title?.length || 0})</div>
+      <div className="arrow">⬇️</div>
+    </div>
+  );
+})}
+   </div>
 
-
-
-      
-
-      </div>
+   
     </div>
   )
 }

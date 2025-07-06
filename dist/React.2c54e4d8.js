@@ -160,11 +160,11 @@
       });
     }
   }
-})({"eEzwh":[function(require,module,exports,__globalThis) {
+})({"frqA7":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 59560;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -26624,11 +26624,16 @@ const ResturantMenu = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "title",
-                                children: title
-                            }, void 0, false, {
+                                children: [
+                                    title,
+                                    " (",
+                                    title?.length || 0,
+                                    ")"
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/Component/ResturantMenu.js",
                                 lineNumber: 39,
-                                columnNumber: 17
+                                columnNumber: 7
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "arrow",
@@ -26636,13 +26641,13 @@ const ResturantMenu = ()=>{
                             }, void 0, false, {
                                 fileName: "src/Component/ResturantMenu.js",
                                 lineNumber: 40,
-                                columnNumber: 17
+                                columnNumber: 7
                             }, undefined)
                         ]
                     }, index, true, {
                         fileName: "src/Component/ResturantMenu.js",
                         lineNumber: 38,
-                        columnNumber: 15
+                        columnNumber: 5
                     }, undefined);
                 })
             }, void 0, false, {
@@ -26719,9 +26724,9 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const iItemList = ()=>{
+const iItemList = ({ items })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "Catagory Item"
+        children: "category"
     }, void 0, false, {
         fileName: "src/Component/iItemList.js",
         lineNumber: 5,
@@ -27215,6 +27220,6 @@ module.exports = import("./ContactUs.c94a2a2e.js").then(()=>module.bundle.root('
 },{"dup3p":"dup3p"}],"CPHzy":[function(require,module,exports,__globalThis) {
 module.exports = import("./About.ba8b125e.js").then(()=>module.bundle.root('b5tT6'));
 
-},{"b5tT6":"b5tT6"}]},["eEzwh","hh6uc"], "hh6uc", "parcelRequire77dd", {}, null, null, "http://localhost:59560")
+},{"b5tT6":"b5tT6"}]},["frqA7","hh6uc"], "hh6uc", "parcelRequire77dd", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=React.2c54e4d8.js.map

@@ -1,7 +1,9 @@
-const ResturentCategory = ()=> {
+const ResturentCategory = ({data})=> {
+    console.log(data);
+    
     return <div>
 
-        ResturentCategory
+        
 
     </div>
 }

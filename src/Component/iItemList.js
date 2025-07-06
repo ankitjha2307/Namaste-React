@@ -1,10 +1,10 @@
 import React from 'react'
 
-const iItemList  = () => {
+const iItemList  = ({items}) => {
   return (
     <div>
-      Catagory Item
-    </div>
+     category
+         </div>
   )
 }
 
