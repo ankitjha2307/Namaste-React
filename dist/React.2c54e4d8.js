@@ -26724,16 +26724,61 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const iItemList = ({ items })=>{
+const ItemList = ({ items })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "category"
+        children: items.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: item.card.info.name
+                            }, void 0, false, {
+                                fileName: "src/Component/iItemList.js",
+                                lineNumber: 9,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: item.card.info.price
+                            }, void 0, false, {
+                                fileName: "src/Component/iItemList.js",
+                                lineNumber: 10,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Component/iItemList.js",
+                        lineNumber: 8,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: item.card.info.description
+                        }, void 0, false, {
+                            fileName: "src/Component/iItemList.js",
+                            lineNumber: 13,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Component/iItemList.js",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, item.card.info.id, true, {
+                fileName: "src/Component/iItemList.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined))
     }, void 0, false, {
         fileName: "src/Component/iItemList.js",
         lineNumber: 5,
         columnNumber: 5
     }, undefined);
 };
-exports.default = iItemList;
+_c = ItemList;
+exports.default = ItemList;
+var _c;
+$RefreshReg$(_c, "ItemList");
 
   $parcel$ReactRefreshHelpers$ded0.postlude(module);
 } finally {
@@ -26741,36 +26786,18 @@ exports.default = iItemList;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"99ZWy":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$5331 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$5331.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5331.prelude(module);
-
-try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const ResturentCategory = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "ResturentCategory"
-    }, void 0, false, {
-        fileName: "src/Component/ResturentCategory.js",
-        lineNumber: 2,
-        columnNumber: 12
-    }, undefined);
+const ResturentCategory = ({ data })=>{
+    console.log(data);
+    return;
 };
 _c = ResturentCategory;
 exports.default = ResturentCategory;
 var _c;
 $RefreshReg$(_c, "ResturentCategory");
 
-  $parcel$ReactRefreshHelpers$5331.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"khhGm":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"khhGm":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$95d5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$95d5.init();
 var prevRefreshReg = globalThis.$RefreshReg$;

@@ -42,7 +42,7 @@ const ResturantMenu = () => {
   );
 })}
    </div>
-
+{/* <ItemList items={info.itemCards} /> */}
    
     </div>
   )

@@ -1,12 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-const iItemList  = ({items}) => {
+const ItemList = ({ items }) => {
   return (
     <div>
-     category
-         </div>
-  )
-}
+      {items.map((item) => (
+        <div key={item.card.info.id}>
+          <div>
+            <span>{item.card.info.name}</span>
+            <span>{item.card.info.price}</span>
+          </div>
+          <div>
+            <p>{item.card.info.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default iItemList ; 
- 
+export default ItemList;

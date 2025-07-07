@@ -1,11 +1,12 @@
 const ResturentCategory = ({data})=> {
     console.log(data);
     
-    return <div>
+    return 
+    
 
         
 
-    </div>
+   
 }
 
 export default ResturentCategory;
