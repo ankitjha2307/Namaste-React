@@ -559,17 +559,32 @@
 }
 
 .menu-category{
-  height: 50px;
-  width: 50%;
+  height: 80%;
+  width: 80%;
   border: 1px solid black;
   border-radius: 10px;
   margin: 10px;
   align-items: center;
   padding-left: 20px;
   cursor: pointer;
+  flex-direction: column;
+  /* display: flex; */
+  text-align: left;
+}
+
+.info{
   display: flex;
   justify-content: space-between;
-  
+}
+
+.title{
+  font-weight: 900;
+  font-size: larger;
+  justify-content: space-between;
+}
+
+.border{
+  border-bottom: #333;
 }
 
 

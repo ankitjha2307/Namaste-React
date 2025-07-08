@@ -516,15 +516,30 @@
 
 .menu-category {
   cursor: pointer;
+  text-align: left;
   border: 1px solid #000;
   border-radius: 10px;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: 50%;
-  height: 50px;
+  width: 80%;
+  height: 80%;
   margin: 10px;
   padding-left: 20px;
+}
+
+.info {
+  justify-content: space-between;
   display: flex;
+}
+
+.title {
+  justify-content: space-between;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.border {
+  border-bottom: #333;
 }
 
 .arrow-label {

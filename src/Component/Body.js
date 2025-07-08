@@ -1,4 +1,4 @@
-import ResturentCards, {withPromotedLabel} from "./ResturencCards"; 
+import ResturentCards, {withPromotedLabel} from "./ResturentCards"; 
 import Shimmer from "./shimmer";
 import HorizontalSideBar from "./HorizontalSideBar"; 
 import { useEffect,useState } from "react";
