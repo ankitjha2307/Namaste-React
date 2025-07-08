@@ -1,7 +1,7 @@
 import Shimmer from "./shimmer";
 import { useParams } from "react-router";
 import useResturentMenu from "../Utils/useResturantMenu";
-import iItemList from "./iItemList";
+import ItemList from "./itemList";
 import ResturentCategory from "./ResturentCategory";
 
 const ResturantMenu = () => {
@@ -42,7 +42,7 @@ const ResturantMenu = () => {
   );
 })}
    </div>
-{/* <ItemList items={info.itemCards} /> */}
+{/* <ItemList item={itemCards} /> */}
    
     </div>
   )

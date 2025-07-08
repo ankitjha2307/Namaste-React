@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ItemList = ({ items }) => {
+const ItemList = ({ itemc }) => {
   return (
     <div>
       {items.map((item) => (
