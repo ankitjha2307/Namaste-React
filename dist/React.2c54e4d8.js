@@ -26754,15 +26754,7 @@ const ItemList = (props)=>{
                                 lineNumber: 18,
                                 columnNumber: 11
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    children: item.card.info.description
-                                }, void 0, false, {
-                                    fileName: "src/Component/itemList.js",
-                                    lineNumber: 23,
-                                    columnNumber: 14
-                                }, undefined)
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
                                 fileName: "src/Component/itemList.js",
                                 lineNumber: 22,
                                 columnNumber: 11
