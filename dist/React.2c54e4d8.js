@@ -26760,7 +26760,7 @@ const ItemList = (props)=>{
                                 }, void 0, false, {
                                     fileName: "src/Component/itemList.js",
                                     lineNumber: 23,
-                                    columnNumber: 13
+                                    columnNumber: 14
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Component/itemList.js",

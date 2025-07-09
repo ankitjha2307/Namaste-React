@@ -20,7 +20,7 @@ const ItemList = (props) => {
             <span> Rs.{item.card.info.price/100 || item.card.info.defaultPrice/100}</span>
           </div>
           <div>
-            <p>{item.card.info.description}</p>
+             {/* <p>{item.card.info.description}</p> */}
           </div>
         </div>
       ))}
